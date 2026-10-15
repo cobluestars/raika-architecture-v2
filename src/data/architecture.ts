@@ -692,7 +692,7 @@ export const EDGES: ArchEdge[] = [
     target: 'mongoapi',
     label: '세션 목록 · 복원',
     kind: 'client',
-    route: [[325, 250], [384, 250], [384, 935], [430, 935]],
+    route: [[325, 250], [384, 250], [384, 860], [430, 860]],
   },
   { id: 'e4', source: 'tts', target: 'avatar', label: '/ws/lipsync 오디오 + 립싱크', kind: 'audio' },
   { id: 'e5', source: 'mobile', target: 'gateway', label: 'HTTPS / WSS · 쿠키 인증', kind: 'client' },
@@ -703,7 +703,7 @@ export const EDGES: ArchEdge[] = [
     target: 'tts',
     label: '/ws/lipsync 프록시',
     kind: 'audio',
-    route: [[690, 375], [733, 375], [733, 745], [690, 745]],
+    route: [[690, 390], [733, 390], [733, 700], [690, 700]],
   },
   {
     id: 'e8',
@@ -711,7 +711,7 @@ export const EDGES: ArchEdge[] = [
     target: 'stt',
     label: '/stt 음성 인식',
     kind: 'audio',
-    route: [[690, 345], [1080, 345], [1080, 625], [1420, 625], [1420, 725], [1465, 725]],
+    route: [[690, 360], [1080, 360], [1080, 625], [1420, 625], [1420, 725], [1465, 725]],
   },
   { id: 'e9', source: 'vrcconsole', target: 'vrcstation', label: '관제 API', kind: 'client' },
   { id: 'e10', source: 'vrcbridge', target: 'vrcstation', label: '프로세스 오디오 · 캡처 · 재생', kind: 'audio' },
@@ -721,7 +721,7 @@ export const EDGES: ArchEdge[] = [
     target: 'vllm',
     label: '라우팅 + 문장 스트림 (공유 vLLM)',
     kind: 'ai',
-    route: [[690, 1100], [757, 1100], [757, 330], [1070, 330], [1070, 275], [1100, 275]],
+    route: [[690, 1010], [757, 1010], [757, 330], [1070, 330], [1070, 275], [1100, 275]],
   },
   {
     id: 'e12',
@@ -729,7 +729,7 @@ export const EDGES: ArchEdge[] = [
     target: 'tts',
     label: 'audio_only 합성',
     kind: 'audio',
-    route: [[690, 1115], [741, 1115], [741, 775], [690, 775]],
+    route: [[690, 1025], [741, 1025], [741, 730], [690, 730]],
   },
   {
     id: 'e13',
@@ -737,7 +737,7 @@ export const EDGES: ArchEdge[] = [
     target: 'stt',
     label: 'VAD 구간 STT',
     kind: 'audio',
-    route: [[690, 1150], [765, 1150], [765, 1010], [1412, 1010], [1412, 755], [1465, 755]],
+    route: [[690, 1060], [765, 1060], [765, 1010], [1412, 1010], [1412, 755], [1465, 755]],
   },
   {
     id: 'e14',
@@ -745,7 +745,7 @@ export const EDGES: ArchEdge[] = [
     target: 'sqlite',
     label: '임시 · 장기 기억',
     kind: 'data',
-    route: [[560, 1184], [560, 1212], [1768, 1212], [1768, 1015], [1835, 1015]],
+    route: [[560, 1094], [560, 1212], [1768, 1212], [1768, 1015], [1835, 1015]],
   },
   {
     id: 'e15',
@@ -753,7 +753,7 @@ export const EDGES: ArchEdge[] = [
     target: 'mainapi',
     label: '멀티프로세스 기동 (Main · DB API)',
     kind: 'control',
-    route: [[430, 195], [410, 195], [410, 540], [430, 540]],
+    route: [[430, 230], [410, 230], [410, 525], [430, 525]],
   },
   {
     id: 'e16',
@@ -761,7 +761,7 @@ export const EDGES: ArchEdge[] = [
     target: 'vllm',
     label: 'Docker 기동 · 프로파일 선택',
     kind: 'control',
-    route: [[690, 162], [1245, 162], [1245, 188]],
+    route: [[640, 171], [640, 158], [1245, 158], [1245, 188]],
   },
   {
     id: 'e17',
@@ -769,7 +769,7 @@ export const EDGES: ArchEdge[] = [
     target: 'tts',
     label: 'vLLM 준비 후 기동',
     kind: 'control',
-    route: [[430, 210], [402, 210], [402, 745], [430, 745]],
+    route: [[430, 245], [402, 245], [402, 700], [430, 700]],
   },
   { id: 'e19', source: 'mainapi', target: 'router', label: '의도 분류', kind: 'ai' },
   { id: 'e20', source: 'mainapi', target: 'context', label: '턴 컨텍스트 조립', kind: 'ai' },
@@ -784,7 +784,7 @@ export const EDGES: ArchEdge[] = [
     target: 'tts',
     label: '조기 TTS (첫 문장)',
     kind: 'audio',
-    route: [[1115, 520], [1086, 520], [1086, 565], [749, 565], [749, 790], [690, 790]],
+    route: [[1115, 520], [1086, 520], [1086, 552], [749, 552], [749, 745], [690, 745]],
   },
   {
     id: 'e27',
@@ -858,7 +858,7 @@ export const EDGES: ArchEdge[] = [
     target: 'docs',
     label: '/analyze_files',
     kind: 'ai',
-    route: [[690, 598], [753, 598], [753, 770], [1095, 770]],
+    route: [[690, 583], [753, 583], [753, 770], [1095, 770]],
   },
   {
     id: 'e38',
@@ -883,7 +883,7 @@ export const EDGES: ArchEdge[] = [
     target: 's3',
     label: '업로드 원본',
     kind: 'data',
-    route: [[690, 584], [1442, 584], [1442, 840], [1835, 840]],
+    route: [[690, 569], [1442, 569], [1442, 840], [1835, 840]],
   },
   {
     id: 'e42',
@@ -891,6 +891,6 @@ export const EDGES: ArchEdge[] = [
     target: 'mongodb',
     label: 'motor CRUD',
     kind: 'data',
-    route: [[690, 975], [1776, 975], [1776, 505], [1835, 505]],
+    route: [[690, 900], [749, 900], [749, 975], [1776, 975], [1776, 505], [1835, 505]],
   },
 ];
